@@ -1,0 +1,136 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*Let's use border box*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*My own CSS*/
+body {
+    line-height: 1.4;
+    padding: 0 18px;
+}
+
+html {
+    /* background-color: #FF5722; */
+    color: #9C27B0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: 'Lobster', cursive;
+    margin-top: 12px;
+    /* text-transform: uppercase; */
+    letter-spacing: 4px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.feed-url {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 8px;
+}
+
+article {
+    margin-bottom: 35px;
+    border-bottom: 1px dotted #795548;
+    padding-bottom: 10px;
+}
+
+.result {
+    max-width: 550px;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    margin-top: 30px;
+    /*-webkit-box-shadow: 1px 1px 51px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 51px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 51px 0px rgba(0,0,0,0.75);
+    padding: 12px;
+    background-color: #b78f81;
+    color: white;
+    border-radius: 15px;*/
+}
+
+.feeditem-title {
+    margin-bottom: 6px;
+}
+
+.feeditem-content {
+    margin-bottom: 8px;
+}
+
+.feed-des {
+    text-align: center;
+    margin-bottom: 15px;
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Lato', sans-serif;
+}
+
+.loading {
+    text-align: center;
+}
+
+
+/*this will make jasmine look nice on mobile*/
+.jasmine_html-reporter .result-message {
+    overflow: auto;
+}
