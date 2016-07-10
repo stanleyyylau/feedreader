@@ -5,8 +5,23 @@
     <meta charset="utf-8">
     <title>RSS Feed Reader</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans|Lato|Source+Sans+Pro|Raleway|Lobster' rel='stylesheet' type='text/css'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans|Lato|Source+Sans+Pro|Raleway|Lobster' rel='stylesheet' type='text/css'> -->
     <!-- load the testing framework Jasmine -->
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: {
+                families: ['Open+Sans::latin', 'Lato::latin', 'Source+Sans+Pro::latin', 'Raleway::latin', 'Lobster::latin']
+            }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
     <link rel="stylesheet" href="jasmine/lib/jasmine-2.1.2/jasmine.css">
     <!-- load my own css -->
     <link rel="stylesheet" href="css/master.css">
@@ -17,22 +32,22 @@
 
 <body>
     <div class="admin">
-      <div class="admin-button">
-        ADMIN PANEL
-      </div>
-      <div class="admin-content">
-        <input class="admin-feed-name" type="text" name="name" value="Feed name" onblur="if (this.value == '') {this.value = 'Feed name';}" onfocus="if (this.value == 'Feed name') {this.value = '';}">
-        <input class="admin-feed-url" type="text" name="name"  value="Feed url" onblur="if (this.value == '') {this.value = 'Feed url';}" onfocus="if (this.value == 'Feed url') {this.value = '';}">
-        <button class="admin-feed-add" type="button" name="button">ADD</button>
-        <!-- this is the list of feeds -->
-        <div class="feed-list-div">
-          <h2>My feed list</h2>
-          <ul class="feed-list-ul">
-            <li>Defaule feed</li>
-            <li>New feed</li>
-          </ul>
+        <div class="admin-button">
+            ADMIN PANEL
         </div>
-      </div>
+        <div class="admin-content">
+            <input class="admin-feed-name" type="text" name="name" value="Feed name" onblur="if (this.value == '') {this.value = 'Feed name';}" onfocus="if (this.value == 'Feed name') {this.value = '';}">
+            <input class="admin-feed-url" type="text" name="name" value="Feed url" onblur="if (this.value == '') {this.value = 'Feed url';}" onfocus="if (this.value == 'Feed url') {this.value = '';}">
+            <button class="admin-feed-add" type="button" name="button">ADD</button>
+            <!-- this is the list of feeds -->
+            <div class="feed-list-div">
+                <h2>My feed list</h2>
+                <ul class="feed-list-ul">
+                    <li>Defaule feed</li>
+                    <li>New feed</li>
+                </ul>
+            </div>
+        </div>
 
     </div>
     <h1>Feed Reader</h1>
@@ -52,7 +67,7 @@
     <script type="text/javascript" src="js/main.js"></script>
 
     <!-- load the spcs js file -->
-    <script src="jasmine/spec/feedreader.js"></script
+    <script src="jasmine/spec/feedreader.js"></script>
 </body>
 
 </html>

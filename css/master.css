@@ -2,59 +2,47 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block;
 }
 
+body {
+    line-height: 1;
+}
+
+ol,ul {
+    list-style: none;
+}
+
+blockquote,q {
+    quotes: none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 
 /*Let's use border box*/
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+*,:before,:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /*My own CSS*/
@@ -64,7 +52,7 @@ body {
 }
 
 html {
-    /* background-color: #FF5722; */
+/* background-color: #FF5722; */
     color: #9C27B0;
 }
 
@@ -72,21 +60,21 @@ h1 {
     text-align: center;
     font-size: 40px;
     margin-bottom: 10px;
-    font-family: 'Lobster', cursive;
+    font-family: 'Lobster',cursive;
     margin-top: 12px;
-    /* text-transform: uppercase; */
+/* text-transform: uppercase; */
     letter-spacing: 4px;
 }
 
 h2 {
     text-align: center;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway',sans-serif;
 }
 
 .feed-url {
     text-align: center;
     margin-bottom: 10px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway',sans-serif;
     margin-top: 8px;
 }
 
@@ -101,9 +89,9 @@ article {
 .result {
     max-width: 550px;
     margin: 0 auto;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato',sans-serif;
     margin-top: 30px;
-    /*-webkit-box-shadow: 1px 1px 51px 0px rgba(0,0,0,0.75);
+/*-webkit-box-shadow: 1px 1px 51px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 1px 51px 0px rgba(0,0,0,0.75);
     box-shadow: 1px 1px 51px 0px rgba(0,0,0,0.75);
     padding: 12px;
@@ -116,19 +104,16 @@ article {
     margin-bottom: 6px;
 }
 
-
-
 .feed-des {
     text-align: center;
     margin-bottom: 15px;
-    /*font-family: 'Open Sans', sans-serif;*/
-    font-family: 'Lato', sans-serif;
+/*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Lato',sans-serif;
 }
 
 .loading {
     text-align: center;
 }
-
 
 /*this will make jasmine look nice on mobile*/
 .jasmine_html-reporter .result-message {
@@ -158,7 +143,7 @@ span.at {
 }
 
 a.feeditem-link {
-    color: black;
+    color: #000;
     text-decoration: inherit;
 }
 
@@ -171,7 +156,6 @@ a.feeditem-link {
     text-decoration: underline;
 }
 
-
 input {
     display: block;
     width: 80%;
@@ -180,11 +164,10 @@ input {
     font-size: 15px;
 }
 
-
 button.admin-feed-add {
     font-size: 20px;
     padding: 8px 22px;
-    color: white;
+    color: #fff;
     border: 1px solid #E91E63;
     background-color: #E91E63;
     border-radius: 10px;
@@ -204,10 +187,9 @@ button.admin-feed-add {
 }
 
 .feed-list-div h2 {
-    margin: 12px 0px;
+    margin: 12px 0;
     margin-top: 20px;
 }
-
 
 .admin-content {
     display: none;
@@ -222,13 +204,13 @@ button.admin-feed-add {
     margin: 0 auto;
     text-align: center;
     background: #009688;
-    color: white;
-    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-family: 'Lato',sans-serif;
 }
 
 .admin-button {
     cursor: pointer;
-    padding: 5px 0 5px 0;
+    padding: 5px 0;
 }
 
 .feed-list-div {

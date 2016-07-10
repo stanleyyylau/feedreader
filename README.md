@@ -30,6 +30,13 @@ https://queryfeed.net/twitter?q=steve+jobs&title-type=user-name-both&geocode=
 ## Bug fix
 @ bug: twitter account string manipulation bug fix
 
+## Code Quality
+To say 'Code Quality' is too broad, but the code at least
+
++ Passing W3C HTML validator  -- https://validator.w3.org/
++ Passing W3C CSS validator  -- https://jigsaw.w3.org/css-validator/
++ Passing JShint validation -- http://jshint.com/
++ All codes nicely formatted with online tools  -- https://www.dirtymarkup.com/
 
 ## Resource that help me with this project
 
@@ -42,5 +49,3 @@ https://www.script-tutorials.com/creating-own-rss-reader-using-google-feed-api/
 https://developers.google.com/feed/ -- most important one
 
 http://stackoverflow.com/questions/2984311/delete-default-value-of-an-input-text-on-click   — enhancement functionality
-
-
