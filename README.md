@@ -33,9 +33,9 @@ https://queryfeed.net/twitter?q=steve+jobs&title-type=user-name-both&geocode=
 ## Code Quality
 To say 'Code Quality' is too broad, but the code at least
 
-+ Passing W3C HTML validator  -- https://validator.w3.org/
-+ Passing W3C CSS validator  -- https://jigsaw.w3.org/css-validator/
-+ Passing JShint validation -- http://jshint.com/
++ Passed W3C HTML validator  -- https://validator.w3.org/
++ Passed W3C CSS validator  -- https://jigsaw.w3.org/css-validator/
++ Passed JShint validation -- http://jshint.com/
 + All codes nicely formatted with online tools  -- https://www.dirtymarkup.com/
 
 ## Resource that help me with this project
