@@ -6,7 +6,6 @@ This feed reader uses google feed API to parse XML data to JSON. and the rest is
 ## How to use
 Download/clone the repo to your local computer and run the index.html file, 
 wait a few seconds, once feed entries fetching and parsing is done, you will see the output display on the page
-or you can check it out on gitpage : stanleyyylau.github.io/feedreader
 
 ## Custom Feed
 
