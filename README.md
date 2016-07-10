@@ -1,19 +1,19 @@
 # Coding Test -- Feed Reader
 
-This feed reader uses google feed API to parse XML data to JSON. and the rest is just basic DOM manipalation.
+This feed reader uses google feed API to parse XML data to JSON. and the rest is just basic DOM manipulation.
+
+## How To Use
+
+Download/clone the repo to your local computer and run the index.html file, wait a few seconds, once feed entries fetching and parsing is done, you will see the output displayed on the page
 
 
-## How to use
-Download/clone the repo to your local computer and run the index.html file, 
-wait a few seconds, once feed entries fetching and parsing is done, you will see the output display on the page
+## Add Your Custom Feed
 
-## Custom Feed
++ Click the ‘admin panel’ button at the top
++ Enter your feed name and feed url and click ‘add’ button
++ Click on your newly added feed to start loading
 
-Notice in this second version I added a function where you can add your own custom feeds to this feed reader,
-Simplly click on the admin panel at the top of the page. on the drop-down mune, enter your feed name and feed url and click "add" button
-you will see your newly added feed under "my feed list", click on it to load your custom feed
-
-## Feeds for you to play around
+## Feeds To Play Around
 
 Obama
 https://queryfeed.net/twitter?q=obama&title-type=user-name-both&geocode=
@@ -28,19 +28,19 @@ Steve jobs
 https://queryfeed.net/twitter?q=steve+jobs&title-type=user-name-both&geocode=
 
 ## Bug fix
-@ bug: twitter account string manipation bug fix
+@ bug: twitter account string manipulation bug fix
 
 
 ## Resource that help me with this project
 
-https://www.youtube.com/watch?v=0klgLsSxGsU
+https://www.youtube.com/watch?v=0klgLsSxGsU  — the concept of RSS feed and feed reader
 
-http://www.maxburstein.com/blog/build-your-own-rss-feed-reader/
+http://www.maxburstein.com/blog/build-your-own-rss-feed-reader/  — possible ways of building feed reader
 
 https://www.script-tutorials.com/creating-own-rss-reader-using-google-feed-api/
 
 https://developers.google.com/feed/ -- most important one
 
-http://stackoverflow.com/questions/2984311/delete-default-value-of-an-input-text-on-click
+http://stackoverflow.com/questions/2984311/delete-default-value-of-an-input-text-on-click   — enhancement functionality
 
 
