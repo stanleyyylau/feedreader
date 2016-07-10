@@ -6,7 +6,6 @@
 
 var feeds = ['https://queryfeed.net/twitter?q=%40pinkoi&title-type=user-name-both&geocode='];
 
-
 // this application is relatively simple, one variable, one function, nothing more
 // in MV-whatever, this is the whatever part
 
@@ -33,11 +32,22 @@ function loadFeed(index){
 
       // let's now loop through the entries and append them, here I use a %data - replace trick from the online-resume project
       for(var i = 0 ; i<result.feed.entries.length; i++){
-        var $article = '<article> <div class="feeditem-title"> <span><a class="feeditem-link" href="%data-url">%data-title</a></span> </div> <div class="feeditem-content"> %data-content</div> <div class="feeditem-date"> <span>%data-date</span> </div> </article>';
+          var $article = '<article> <div class="feeditem-title"> <img class="tweet-logo" src="http://placehold.it/45x45"> <span><a class="feeditem-link" href="%data-url">%data-name</a></span><br> <span class="at">%data-at</span> </div> <div class="feeditem-content"> %data-content</div> <div class="feeditem-date"> <span>%data-date</span> </div> </article>';
             $article = $article.replace('%data-url',result.feed.entries[i].link);
-            $article = $article.replace('%data-title',result.feed.entries[i].title);
+            // $article = $article.replace('%data-title',result.feed.entries[i].title);
+            //I will split this to make the RSS feed look like twitter tweet
+            var tweetArray = result.feed.entries[i].title.split(' ');
+            var name = tweetArray[0];
+            var at = tweetArray[1];
+            console.log(result.feed.entries[i].title);
+            $article = $article.replace('%data-name',name);
+            $article = $article.replace('%data-at',at);
             $article = $article.replace('%data-content',result.feed.entries[i].content);
-            $article = $article.replace('%data-date',result.feed.entries[i].publishedDate);
+            // here i'll perform some string manipulation tricks
+            var yearIndex = result.feed.entries[i].publishedDate.indexOf('2016');
+            var date = result.feed.entries[i].publishedDate.substr(0, yearIndex);
+            // alert(tweetDate);
+            $article = $article.replace('%data-date',date);
 
             // let's convert $article to jquery object
             $article = $($article);
@@ -56,6 +66,6 @@ function initialize() {
 }
 
 google.load("feeds", "1");
-// google.setOnLoadCallback(initialize);
+google.setOnLoadCallback(initialize);
 
 loadFeed(0);

@@ -91,9 +91,11 @@ h2 {
 }
 
 article {
-    margin-bottom: 35px;
-    border-bottom: 1px dotted #795548;
-    padding-bottom: 10px;
+    margin: 35px 0;
+    border: 1px dotted #bdb5b3;
+    padding: 15px 10px;
+    position: relative;
+    border-radius: 8px;
 }
 
 .result {
@@ -114,9 +116,7 @@ article {
     margin-bottom: 6px;
 }
 
-.feeditem-content {
-    margin-bottom: 8px;
-}
+
 
 .feed-des {
     text-align: center;
@@ -133,4 +133,40 @@ article {
 /*this will make jasmine look nice on mobile*/
 .jasmine_html-reporter .result-message {
     overflow: auto;
+}
+
+img.tweet-logo {
+    float: left;
+    border-radius: 8px;
+    margin-right: 5px;
+}
+
+.feeditem-date {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    color: #b3b3b3;
+}
+
+a.feeditem-link:hover {
+    color: #2196F3;
+    text-decoration: underline;
+}
+
+span.at {
+    color: #b3b3b3;
+}
+
+a.feeditem-link {
+    color: black;
+    text-decoration: inherit;
+}
+
+.feeditem-content a {
+    color: #2196F3;
+    text-decoration: inherit;
+}
+
+.feeditem-content a:hover {
+    text-decoration: underline;
 }

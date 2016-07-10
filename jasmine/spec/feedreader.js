@@ -25,11 +25,14 @@ $(function(){
     // what it does is before each specs, run this little function first and only after this function is done, thus passing the done argument
     // go away and run the specs below
     beforeEach(function(done) {
-      loadFeed(0,done);
+      loadFeed(0,function(){
+        done();
+      });
     });
 
     it('there will be new content', function(){
       expect($('article').length).not.toBe(0);
+
     });
 
   });
