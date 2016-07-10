@@ -11,6 +11,7 @@ var feeds = ['https://queryfeed.net/twitter?q=%40pinkoi&title-type=user-name-bot
 
 function loadFeed(index){
   var feed = new google.feeds.Feed(feeds[index]);
+  feed.setNumEntries(10);
   feed.load(function(result) {
     if (!result.error) {
       // after RSS finish loading, we will remove that loading image

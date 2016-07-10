@@ -10,6 +10,13 @@ $(function(){
       expect(feeds.length).not.toBe(0);
     });
 
+    it('has name and url property', function(){
+      expect(feeds[0].name).toBeDefined();
+      expect(feeds[0].url).toBeDefined();
+      expect(feeds[0].name).not.toBe('');
+      expect(feeds[0].url).not.toBe('');
+    });
+
   });
 
   // for the second one I will check to make sure the app show the loading image before RSS feed loading finishes
