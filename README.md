@@ -33,10 +33,15 @@ https://queryfeed.net/twitter?q=steve+jobs&title-type=user-name-both&geocode=
 
 
 ## Resource that help me with this project
+
 https://www.youtube.com/watch?v=0klgLsSxGsU
+
 http://www.maxburstein.com/blog/build-your-own-rss-feed-reader/
+
 https://www.script-tutorials.com/creating-own-rss-reader-using-google-feed-api/
+
 https://developers.google.com/feed/ -- most important one
+
 http://stackoverflow.com/questions/2984311/delete-default-value-of-an-input-text-on-click
 
 
