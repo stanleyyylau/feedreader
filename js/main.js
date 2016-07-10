@@ -4,13 +4,18 @@
 
 // In MV-whatever, this the model part
 
-var feeds = ['https://queryfeed.net/twitter?q=%40pinkoi&title-type=user-name-both&geocode='];
+var feeds = [
+  {
+    name:'Dafault Feed',
+    url: 'https://queryfeed.net/twitter?q=%40pinkoi&title-type=user-name-both&geocode='
+  }
+];
 
 // this application is relatively simple, one variable, one function, nothing more
 // in MV-whatever, this is the whatever part
 
 function loadFeed(index){
-  var feed = new google.feeds.Feed(feeds[index]);
+  var feed = new google.feeds.Feed(feeds[index].url);
   feed.setNumEntries(10);
   feed.load(function(result) {
     if (!result.error) {
@@ -60,6 +65,14 @@ function loadFeed(index){
   });
 }
 
+function addToFeedsArray(name, url){
+  var newFeedObject = {
+    name: name,
+    url: url
+  }
+
+  feeds.push(newFeedObject);
+}
 
 // I got this code snipet from google's offical documentation
 function initialize() {

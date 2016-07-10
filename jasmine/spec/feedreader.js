@@ -10,7 +10,7 @@ $(function(){
       expect(feeds.length).not.toBe(0);
     });
 
-    it('has name and url property', function(){
+    it('made of objects with name and url property', function(){
       expect(feeds[0].name).toBeDefined();
       expect(feeds[0].url).toBeDefined();
       expect(feeds[0].name).not.toBe('');
@@ -18,6 +18,20 @@ $(function(){
     });
 
   });
+
+  // new function for second code submit
+  describe('additional function', function(){
+    it('addToFeedsArray function are define', function(){
+      expect(addToFeedsArray).toBeDefined();
+    });
+
+    it('can add url and new to feeds array', function(){
+      addToFeedsArray('testName', 'testUrl');
+      expect(feeds[feeds.length-1].name).toBe('testName');
+      expect(feeds[feeds.length-1].url).toBe('testUrl');
+    });
+  });
+
 
   // for the second one I will check to make sure the app show the loading image before RSS feed loading finishes
   describe('Loading image', function(){
