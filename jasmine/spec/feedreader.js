@@ -26,9 +26,9 @@ $(function(){
     });
 
     it('can add url and new to feeds array', function(){
-      addToFeedsArray('testName', 'testUrl');
-      expect(feeds[feeds.length-1].name).toBe('testName');
-      expect(feeds[feeds.length-1].url).toBe('testUrl');
+      addToFeedsArray('Jasmine Test Feed', 'https://queryfeed.net/twitter?q=javascript&title-type=user-name-both&geocode=');
+      expect(feeds[feeds.length-1].name).toBe('Jasmine Test Feed');
+      expect(feeds[feeds.length-1].url).toBe('https://queryfeed.net/twitter?q=javascript&title-type=user-name-both&geocode=');
     });
   });
 
@@ -40,23 +40,6 @@ $(function(){
     });
   });
 
-  // there will be new content after feed loading finishes
-  describe('When Feed loading is done', function(){
-    // I learn this little trick from Udacity's code review, this is used to handle asynchronous request
-    // what it does is before each specs, run this little function first and only after this function is done, thus passing the done argument
-    // go away and run the specs below
-    beforeEach(function(done) {
-      loadFeed(0,function(){
-        done();
-      });
-    });
-
-    it('there will be new content', function(){
-      expect($('article').length).not.toBe(0);
-
-    });
-
-  });
 
 
 }());

@@ -170,3 +170,78 @@ a.feeditem-link {
 .feeditem-content a:hover {
     text-decoration: underline;
 }
+
+
+input {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 5px;
+    font-size: 15px;
+}
+
+
+button.admin-feed-add {
+    font-size: 20px;
+    padding: 8px 22px;
+    color: white;
+    border: 1px solid #E91E63;
+    background-color: #E91E63;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.admin {
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.admin {
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.feed-list-div h2 {
+    margin: 12px 0px;
+    margin-top: 20px;
+}
+
+
+.admin-content {
+    display: none;
+}
+
+.admin-content.visible {
+    display: block;
+}
+
+.admin {
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    background: #009688;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.admin-button {
+    cursor: pointer;
+    padding: 5px 0 5px 0;
+}
+
+.feed-list-div {
+    padding-bottom: 5px;
+}
+
+.feed-list-ul li {
+    border-bottom: 1px solid #FF9800;
+    display: block;
+    max-width: 160px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    padding: 3px 0;
+    color: #FFC107;
+    cursor: pointer;
+}

@@ -16,6 +16,25 @@
 </head>
 
 <body>
+    <div class="admin">
+      <div class="admin-button">
+        ADMIN PANEL
+      </div>
+      <div class="admin-content">
+        <input class="admin-feed-name" type="text" name="name" value="Feed name" onblur="if (this.value == '') {this.value = 'Feed name';}" onfocus="if (this.value == 'Feed name') {this.value = '';}">
+        <input class="admin-feed-url" type="text" name="name"  value="Feed url" onblur="if (this.value == '') {this.value = 'Feed url';}" onfocus="if (this.value == 'Feed url') {this.value = '';}">
+        <button class="admin-feed-add" type="button" name="button">ADD</button>
+        <!-- this is the list of feeds -->
+        <div class="feed-list-div">
+          <h2>My feed list</h2>
+          <ul class="feed-list-ul">
+            <li>Defaule feed</li>
+            <li>New feed</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
     <h1>Feed Reader</h1>
     <div class="result">
         <div class="loading">
@@ -28,12 +47,12 @@
 
     <!-- I use this google API to parse the XML feed to JSON format -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <!-- <script src="http://cdn.jsdelivr.net/handlebarsjs/2.0.0/handlebars.min.js"></script> -->
+    <script src="http://cdn.jsdelivr.net/handlebarsjs/2.0.0/handlebars.min.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
     <!-- load the spcs js file -->
-    <script src="jasmine/spec/feedreader.js"></script>
+    <script src="jasmine/spec/feedreader.js"></script
 </body>
 
 </html>
